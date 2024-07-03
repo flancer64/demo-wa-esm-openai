@@ -1,0 +1,35 @@
+.t-layout-center {
+    align-items: start;
+    display: flex;
+    height: calc(100vh - 50px); /* w/o header */
+    justify-content: center;
+    padding: 10px;
+}
+
+.t-svg-white {
+    filter: invert(100%) sepia(4%) saturate(7485%) hue-rotate(135deg) brightness(111%) contrast(116%);
+}
+
+.t-card {
+    max-width: 600px;
+    width: 100%;
+}
+
+.t-chat-scroll {
+    height: calc(100vh - 50px - 75px); /* w/o header and input bar*/
+    width: 100%;
+}
+
+.t-chat-input {
+    border-radius: 5px;
+    box-sizing: border-box;
+    max-height: 75px;
+    min-height: 50px;
+    padding: 10px;
+    resize: none;
+    width: 100%;
+
+    & TEXTAREA {
+        max-height: calc(75px - 10px - 10px);
+    }
+}
