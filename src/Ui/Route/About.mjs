@@ -16,6 +16,7 @@ const template = `
                 The application uses the following libraries:
             <ul>
                 <li><a href="https://vuejs.org/" target="_blank">Vue</a></li>
+                <li><a href="https://router.vuejs.org/" target="_blank">Vue Router</a></li>
                 <li><a href="https://quasar.dev/" target="_blank">Quasar</a></li>
                 <li><a href="https://openai.com/" target="_blank">OpenAI</a></li>
             </ul>
@@ -34,7 +35,7 @@ const template = `
             <p>
                 This application is created for educational purposes and is a demonstration of the ideas presented in
                 this publication. You can find the source code on
-                <a href="https://github.com/your-repo" target="_blank">GitHub</a>. Feel free to modify the
+                <a href="https://github.com/flancer64/demo-wa-esm-openai" target="_blank">GitHub</a>. Feel free to modify the
                 application code and use it for any purpose within the bounds of applicable law.
             </p>
             <p>
