@@ -34,9 +34,10 @@ const template = `
             </p>
             <p>
                 This application is created for educational purposes and is a demonstration of the ideas presented in
-                this publication. You can find the source code on
-                <a href="https://github.com/flancer64/demo-wa-esm-openai" target="_blank">GitHub</a>. Feel free to modify the
-                application code and use it for any purpose within the bounds of applicable law.
+                <a href="https://flancer32.com/launching-web-apps-without-own-servers-how-esm-and-cdns-are-changing-the-game-a68e6632999f">this
+                    publication</a>. You can find the source code on
+                <a href="https://github.com/flancer64/demo-wa-esm-openai" target="_blank">GitHub</a>. Feel free to
+                modify the application code and use it for any purpose within the bounds of applicable law.
             </p>
             <p>
                 Best regards,

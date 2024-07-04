@@ -1,6 +1,6 @@
 {
   "name": "@flancer64/demo-wa-esm-openai",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "description": "The web app demonstrates ES modules usage from a CDN.",
   "homepage": "https://github.com/flancer64/demo-wa-esm-openai",
