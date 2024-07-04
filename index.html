@@ -22,7 +22,10 @@
         }
     </script>
     <script type="module">
-        import app from './src/App.mjs';
+        /* Import local sources in development mode */
+        // import app from './src/App.mjs';
+        /* Import CDN sources in production mode */
+        import app from 'https://cdn.jsdelivr.net/npm/@flancer64/demo-wa-esm-openai@0.1.0/src/App.mjs';
 
         app.mount('#app');
     </script>
