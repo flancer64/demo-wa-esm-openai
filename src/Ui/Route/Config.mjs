@@ -2,9 +2,10 @@
  * The Vue component for '/config' route.
  */
 // IMPORTS
-import MODEL from '../../Enum/Model.mjs';
 import modConfig from '../../Mod/Config.mjs';
+import MODEL from '../../Enum/Model.mjs';
 import modNotify from '../../Mod/Notify.mjs';
+import wgTitle from '../Widget/App/Title.mjs';
 
 // VARS
 const REF_KEY = 'key';
@@ -95,6 +96,7 @@ export default {
         },
     },
     mounted() {
+        wgTitle.setTitle('Config');
         this.fldModel = modConfig.getModel();
         this.fldPrompt = modConfig.getPrompt();
         this.fldKey = modConfig.getApiKey();

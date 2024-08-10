@@ -1,9 +1,10 @@
 // IMPORTS
+import DEFS from '../../Defaults.mjs';
 import modApi from '../../Mod/Api.mjs';
 import modConfig from '../../Mod/Config.mjs';
 import modNotify from '../../Mod/Notify.mjs';
 import Msg from '../../Dto/Msg.mjs';
-import DEFS from '../../Defaults.mjs';
+import wgTitle from '../Widget/App/Title.mjs';
 
 // VARS
 const REF_MESSAGE = 'message';
@@ -105,6 +106,7 @@ export default {
         },
     },
     mounted() {
+        wgTitle.setTitle('Chat');
         if (!modConfig.getApiKey() || !modConfig.getModel()) {
             modNotify.negative('Please, configure the OpenAI API connection (Menu / Config).');
             setTimeout(() => {

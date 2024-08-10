@@ -13,6 +13,12 @@ const template = `
         </q-item-section>
         <q-item-section>Chat</q-item-section>
     </q-item>
+    <q-item clickable v-ripple to="${DEF.ROUTE_DALL_E}">
+        <q-item-section avatar>
+            <q-icon name="image"/>
+        </q-item-section>
+        <q-item-section>Dall-E 3</q-item-section>
+    </q-item>
     <q-item clickable v-ripple to="${DEF.ROUTE_CONFIG}">
         <q-item-section avatar>
             <q-icon name="settings"/>

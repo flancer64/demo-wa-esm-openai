@@ -3,7 +3,7 @@
  */
 // IMPORTS
 import Navigator from './Layout/Navigator.mjs';
-
+import wgTitle from './Widget/App/Title.mjs';
 // VARS
 const template = `
 <q-layout view="hHh lpR fFf">
@@ -14,7 +14,7 @@ const template = `
                 <q-avatar>
                     <img src="https://www.svgrepo.com/show/306500/openai.svg" class="t-svg-white">
                 </q-avatar>
-                OpenAI API
+                {{title}}
             </q-toolbar-title>
             <q-btn dense flat round icon="menu" @click="toggleNavigator"/>
         </q-toolbar>
@@ -38,11 +38,24 @@ export default {
     data() {
         return {
             ifNavigatorOpen: false,
+            title: 'OpenAI API',
         };
     },
+    /**
+     * @implements Ui_Widget_App_Title.IView
+     */
     methods: {
+        /**
+         * @param {string} data
+         */
+        setTitle(data) {
+            this.title = data;
+        },
         toggleNavigator() {
             this.ifNavigatorOpen = !this.ifNavigatorOpen;
         }
+    },
+    created() {
+        wgTitle.setView(this);
     },
 };

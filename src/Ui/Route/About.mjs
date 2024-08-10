@@ -1,3 +1,6 @@
+// IMPORTS
+import wgTitle from '../Widget/App/Title.mjs';
+
 // VARS
 const template = `
 <div class="t-layout-center">
@@ -52,4 +55,7 @@ const template = `
 // MAIN
 export default {
     template,
+    mounted() {
+        wgTitle.setTitle('About');
+    },
 };

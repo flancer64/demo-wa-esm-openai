@@ -20,6 +20,7 @@ const {createApp} = Vue;
 const routes = [
     {path: DEF.ROUTE_ABOUT, component: () => import('./Ui/Route/About.mjs')},
     {path: DEF.ROUTE_CONFIG, component: () => import('./Ui/Route/Config.mjs')},
+    {path: DEF.ROUTE_DALL_E, component: () => import('./Ui/Route/DallE.mjs')},
     {path: DEF.ROUTE_HOME, component: () => import('./Ui/Route/Chat.mjs')},
 ];
 const router = createRouter({
